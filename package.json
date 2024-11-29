@@ -2,8 +2,14 @@
   "name": "serial-fg-60-scales",
   "version": "1.0.0",
   "description": "Read serial port for getting data from FG-60 scales",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +28,9 @@
   },
   "homepage": "https://github.com/SprayDev/serial-fg-60-scales#readme",
   "devDependencies": {
+    "@types/w3c-web-serial": "^1.0.7",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   }
 }

@@ -6,3 +6,6 @@
 
 # Build filtes
 /dist
+
+# Samples
+/samples
